@@ -7,3 +7,5 @@
 5. Run updated, merged exe. Should show error message in messagebox with error "Derived method 'Read' in type 'Npgsql.TypeHandling.NpgsqlSimpleTypeHandler`1' from assembly 'drofusRevitLink_Revit2019, Version=2.7.0.999, Culture=neutral, PublicKeyToken=null' cannot reduce access."
 
 In my real scenario this isn't an exe but a plugin dll for autodesk revit, and the typediscovery/IOC logic is way more complex and not trivial to write around.
+
+This relates to https://github.com/gluck/il-repack/issues/219 and/or https://github.com/gluck/il-repack/pull/278
