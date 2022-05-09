@@ -4,7 +4,7 @@
 2. Test run application. Should show a blank, white window.
 3. Update ilrepack.cmd to point to ilrepack.exe
 4. Run ilrepack.cmd to overwrite output assembly. This was just a hack around not being able to find MainWindow.xaml otherwise.
-5. Run updated, merged exe. Should show error message in messagebox with error "Derived method 'Read' in type 'Npgsql.TypeHandling.NpgsqlSimpleTypeHandler`1' from assembly 'drofusRevitLink_Revit2019, Version=2.7.0.999, Culture=neutral, PublicKeyToken=null' cannot reduce access."
+5. Run updated, merged exe. Should show error message in messagebox with error "Derived method 'Read' in type 'Npgsql.TypeHandling.NpgsqlSimpleTypeHandler`1' from assembly '<merged assembly name>, Version=<version>, Culture=neutral, PublicKeyToken=null' cannot reduce access."
 
 In my real scenario this isn't an exe but a plugin dll for autodesk revit, and the typediscovery/IOC logic is way more complex and not trivial to write around.
 
